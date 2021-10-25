@@ -9,14 +9,15 @@ function findShortestString(arr) {
   //   }
   // }
   // return arr[indnum]
-
+  
   // let shortest = arr[0]
   // arr.forEach(str => {
   //   if (str.length < shortest.length) shortest = str
   // })
   // return shortest
 
-  return arr.reduce((shortest, string) => 
+  /// why does it not return properly when i have {} after arrow function
+  arr.reduce((shortest, string) =>
     string.length < shortest.length ? string : shortest
   );
 }
