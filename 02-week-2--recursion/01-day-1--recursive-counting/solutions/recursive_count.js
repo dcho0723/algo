@@ -13,7 +13,7 @@ function recursiveCount(num = 0) {
   // recursiveCount(num++);
 
   // IF YOU LOG NUM BELOW, THE NUMBERS PRINT BACKWARDS FROM 9 TO 0. WHY?
-  // console.log(num);
+  console.log(num);
 }
 
 if (require.main === module) {
