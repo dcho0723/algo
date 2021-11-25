@@ -1,5 +1,15 @@
 function fibonacci(n) {
-  // type your code here
+  let count;
+  // let number = [0, 1];
+
+  // let sum = number[0] + number[1];
+  if (count < n) {
+    // number = [number[1], sum];
+    console.log(count)
+    count++;
+    fibonacci(n)
+  }
+  // return number[0]
 }
 
 if (require.main === module) {
