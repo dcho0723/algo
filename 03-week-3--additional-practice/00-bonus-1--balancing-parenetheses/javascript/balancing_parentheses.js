@@ -1,5 +1,20 @@
 function balancingParentheses(string) {
-  // type your code here
+  //create two variables, one counts "(" and one counts ")"
+  //iterate through the string, and count up the variables depending on right or left. 
+  //subtract two variablesa and theresthe answers 
+
+
+  let leftPara = 0
+  let rightPara = 0
+
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === "(") {
+      leftPara++
+    } else {
+      rightPara++
+    }
+  }
+  return Math.abs(leftPara - rightPara)
 }
 
 if (require.main === module) {
