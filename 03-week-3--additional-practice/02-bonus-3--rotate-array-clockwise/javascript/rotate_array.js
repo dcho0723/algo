@@ -1,5 +1,12 @@
 function rotateArray(arr, k) {
-  // type your code here
+  if (k === arr.length) return arr
+  let lastInx = arr.length -1
+  while (k > 0) {
+    let lastChar = arr.pop(lastInx)
+    arr.unshift(lastChar)
+    k--
+  }
+  return arr
 }
 
 if (require.main === module) {
