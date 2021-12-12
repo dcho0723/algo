@@ -1,5 +1,16 @@
 function distinctPairSum(arr, k) {
-  // type your code here
+  let newArr = []
+  for (let i = 0; i < arr.length; i++) {
+    let firstNum = arr[i]
+    let secondNum = arr[i+1]
+    if (firstNum + secondNum === k) {
+      newArr.push([firstNum, secondNum])
+    }
+  }
+  newArr.forEach(arr => {
+    console.log(arr)
+  })
+  // return newArr
 }
 
 if (require.main === module) {
